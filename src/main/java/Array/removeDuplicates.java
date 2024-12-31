@@ -5,9 +5,10 @@ import java.util.HashSet;
 public class removeDuplicates {
     public static void main (String [] args){
 
-        int [] arr = {3,543,3,5,543,23,45};
+        int [] arr = {1,1,2};
 
         removeDuplicatesMethod(arr);
+        System.out.println(removeDuplicatesLeetCode(arr));
     }
 
     private static void removeDuplicatesMethod(int[] arr) {
@@ -17,5 +18,17 @@ public class removeDuplicates {
             set.add(a);
         }
         System.out.println(set);
+
+    }
+
+    static int removeDuplicatesLeetCode(int[] nums) {
+        int i=0;
+        for(int j=1; j<nums.length;j++){
+            if(nums[j] != nums[i]){
+                i++;
+                nums[i] = nums[j];
+            }
+        }
+        return i+1;
     }
 }
