@@ -1,5 +1,8 @@
 package Array;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class SortArrayWithoutInBuilt {
     public static void main(String [] args){
 
@@ -9,7 +12,7 @@ public class SortArrayWithoutInBuilt {
     }
 
     static void sortArray(int [] a){
-        int min=Integer.MAX_VALUE;
+
         for(int i=0 ; i<a.length; i++){
             for(int j=i; j<a.length; j++){
                 if(a[i]>a[j]){

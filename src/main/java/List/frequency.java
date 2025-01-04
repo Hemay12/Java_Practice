@@ -27,5 +27,7 @@ public class frequency {
             System.out.println(newlist.get(i) +" count is "+ count);
         }
 
+//        System.out.println(newlist.get(3));
+
     }
 }
